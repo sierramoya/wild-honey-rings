@@ -1,3 +1,5 @@
+// CONTACT FORM JAVASCRIPT
+
 $(document).ready(function(){
     $('#form').validate({
         debug: true,

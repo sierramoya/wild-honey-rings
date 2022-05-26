@@ -1,3 +1,5 @@
+// RING MOUSEOVER EVENT JAVASCRIPT
+
 function altImage(ring_id) {
     let alt_name = ring_id + "a"
     let alt_src = alt_name + ".jpg"
