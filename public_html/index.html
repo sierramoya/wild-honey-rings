@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--FAVICON, CSS, BOOTSTRAP LINKS-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <title>Wild Honey Rings And Things</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+
+<body>
+
+<!-- HEADER LOGO -->
+
+    <header>
+
+        <div class="container-fluid">
+            <div class="row">
+             <img id="logo" src="logo.PNG" class="mx-auto d-block">
+            </div>
+        </div>
+
+<!-- ABOUT BUSINESS  -->
+
+        <div class="container-fluid text-center">
+            <div id="about us">No two rings are exactly alike. These rings are handmade from silverware. With all
+                designs and sizes each one is uniquely crafted. Available to meet in the Albuquerque, New Mexico area or
+                ship to your home, your finished rings are shipped within 1-2 days of your order. - Abigail</div>
+        </div>
+
+    </header>
+
+<!--RING INVENTORY SHOP AND DESCRIPTIONS-->
+
+    <div class="container-fluid text-center">
+        <h1>SHOP</h1>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center g-2">
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring1')" onmouseout="orgImage('ring1')" id="ring1" src="ring1.jpg" class="img-fluid ring-images" alt="ring1">
+                <p>Country Lane (Silverplate,1954) silverware wrap ring.Size 6</p>
+            </div>
+
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring2')" onmouseout="orgImage('ring2')" id="ring2" src="ring2.jpg" class="img-fluid ring-images" alt="ring2">
+                <p>Country Lane (Silverplate) silverware ring. Size 8</p>
+            </div>
+
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring3')" onmouseout="orgImage('ring3')" id="ring3" src="ring3.jpg" class="img-fluid ring-images" alt="ring3">
+                <p>Flower (Silverplate,1946) silverware ring. Size 7</p>
+            </div>
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring4')" onmouseout="orgImage('ring4')" id="ring4" src="ring4.jpg" class="img-fluid ring-images" alt="ring4" >
+                <p>Rose Ring (Silverplate,1948) silverware ring. Size 9.5</p>
+            </div>
+
+<!--NEXT COLUMN-->
+
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring5')" onmouseout="orgImage('ring5')" id="ring5" src="ring5.jpg" class="img-fluid ring-images" alt="ring5">
+                <p>Maine State Landmark's Nature (Souvenir) Vintage Sterling Silver Spoon ring. Size 9</p>
+            </div>
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring6')" onmouseout="orgImage('ring6')" id="ring6" src="ring6.jpg" class="img-fluid ring-images" alt="ring6">
+                <p>Bucherer  of Switzerland Spoon Vintage Silver Plated Spoon ring. Size 7</p>
+            </div>
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring7')" onmouseout="orgImage('ring7')" id="ring7" src="ring7.jpg" class="img-fluid ring-images" alt="ring7">
+                <p> Queen  Bess II (Silverplate,1946) Silverware Wrap Spoon ring. Size 9.5</p>
+            </div>
+            <div class="col-md-3 px-5">
+                <img onmouseover="altImage('ring8')" onmouseout="orgImage('ring8')" id="ring8" src="ring8.jpg" class="img-fluid ring-images" alt="ring8">
+                <p>Handcrafted Piece of Vintage Gold Plated Flatware Textured Spoon Ring. Size 10</p>
+            </div>
+        </div>
+    </div>
+
+<!--CONTACT FORM-->
+
+<section>
+    <main class="container p-4">
+        <div class="row">
+            <div id="contact">
+                    <h2>Contact Us for Ring Orders or Questions</h2>
+                    <form action="./apis/" id="form" method="post" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-center">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="NAME"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Email" class="form-label text-center">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="E-MAIL"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Subject" class="form-label text-center">Subject</label>
+                            <input class="form-control" id="subject" name="subject" type="text" placeholder="SUBJECT">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-center">Message</label>
+                            <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                        </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="g-recaptcha" data-sitekey="6LfnlvQfAAAAAKrd3VlvumJBPtIVXaZLfoXk60iW"></div>
+                    </form>
+                    <div id="output-area"></div>
+            </div>
+        </div>
+    </main>
+</section>
+<!--END FORM-->
+<!--CSS    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--JQUERY FOR FORM-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--GOOGLE RECAPTCHA-->
+
+<!--JS TAG-->
+    <script src="./js/form-script.js"></script>
+    <script src="./js/rings.js"></script>
+</body>
+</html>

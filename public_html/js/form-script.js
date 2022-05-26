@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('form').validate({
-        debug:true,
+    $('#form').validate({
+        debug: true,
         errorClass: 'alert alert-danger',
         ErrorLabelContainer: '#output-area',
         errorElement: 'div',
@@ -31,20 +31,22 @@ $(document).ready(function(){
                     maxlength: 'Message must be 2000 characters or less.'
                 }
             },
-            submitHandler: (form) => ({
+            submitHandler: (form) => {
                 $('#form').ajaxSubmit({
-                type: 'POST',
-                url: $('form').attr('action'),
-                success:(ajaxOutput) => {
-                    $('#output-area').css('display','')
-                    $('#output-area').html(ajaxOutput)
+                    type: 'POST',
+                    url: $('form').attr('action'),
+                    success: (ajaxOutput) => {
+                        $('#output-area').css('display', '')
+                        $('#output-area').html(ajaxOutput)
 
-                    if($('.alert-success') >= 1){
-                        $('#form')[0].reset()
+                        if ($('.alert-success') >= 1) {
+                            $('#form')[0].reset()
+                        }
                     }
-                }
 
-            })
+
+                })
+            }
         }
-        })
-    }
+    })
+})

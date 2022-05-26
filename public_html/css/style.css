@@ -1,0 +1,69 @@
+/*CSS FOR LOGO AND SHOP*/
+/*BACKGROUND COLOR IS TAN*/
+body {
+    background-color: tan!important;
+}
+
+/*padding about business from logo and shop*/
+#about\ us {
+    font-size: 22px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+/*shop*/
+h1 {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+ /*ring logo*/
+img[alt="ring logo"] {
+    display: block;
+    padding-left: 800px;
+    position: fixed;
+    width: 300px;
+
+}
+
+#logo {
+    width: 300px;
+    position: relative;
+}
+
+/*all ring images*/
+.ring-images {
+    width: 500px!important;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/*contact form styling*/
+#contact {
+    font-size: 100%;
+    padding-top: 15px;
+    font-family: inherit;
+    font-weight: bolder;
+    color: #836953;
+    width: 100%;
+    border: 5px solid #987654;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+main {
+    padding-top: 500px;
+
+}
+/*footer styling*/
+/*footer {*/
+/*    color: #987654;*/
+/*    background-color: black;*/
+/*    height: 90px;*/
+/*    font-family: inherit;*/
+/*    font-weight: bolder;*/
+/*    padding-top: 30px;*/
+/*    padding-left: 350px;*/
+/*    position: sticky;*/
+/*}*/
